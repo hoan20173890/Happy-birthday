@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đốt nến</title>
+<style>
+  .candle {
+    width: 40px;
+    height: 100px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: relative;
+  }
+  .flame {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 20px;
+    height: 40px;
+    background: radial-gradient(circle, #ff0000 0%, #ffd700 70%, #ff0000 100%);
+    border-radius: 50%;
+    animation: flame 1s infinite alternate;
+  }
+  @keyframes flame {
+    0% { transform: scaleY(0.9); }
+    50% { transform: scaleY(1.1); }
+    100% { transform: scaleY(0.9); }
+  }
+</style>
+</head>
+<body>
+<div class="candle">
+  <div class="flame"></div>
+</div>
+</body>
+</html>
